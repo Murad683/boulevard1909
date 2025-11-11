@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Fixed header offset for in-page anchors */
+    scroll-padding-top: 90px;
+  }
+
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-lightBg text-textMain font-sans;
+  }
+
+  /* Slightly increase default paragraph line-height for readability */
+  p {
+    line-height: 1.75;
+  }
+
+  ::selection {
+    background-color: #C6AA76;
+    color: #2F3A30;
+  }
+}
+
+@layer components {
+  .container-layout {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .card-soft {
+    @apply rounded-2xl bg-cardBg shadow-soft;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-accentGold px-6 py-3 text-sm font-medium tracking-wide text-primaryBg transition duration-200 hover:bg-[#d4ba7e] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accentGold/60;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-accentGold px-6 py-3 text-sm font-medium tracking-wide text-accentGold transition duration-200 hover:bg-primaryBg hover:text-lightBg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accentGold/60;
+  }
+
+  .nav-link {
+    @apply text-xs tracking-[0.25em] uppercase text-textMuted transition hover:text-accentGold;
+  }
+}
+
+@layer utilities {
+  /* Dotted leader to visually connect name and price */
+  .leaders {
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-size: 6px 1px;
+    background-repeat: repeat-x;
+    background-position: left 0.9em;
+    height: 1px;
+    color: rgba(198,170,118,0.35); /* accentGold/35 */
+  }
+
+  /* Respect iOS safe areas on mobile sticky bars */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Hide scrollbars for horizontal pill scrollers (mobile) */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

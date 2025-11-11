@@ -1,0 +1,264 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "reservation": "Reservation",
+    "contact": "Contact",
+    "open": "Open menu",
+    "close": "Close menu"
+  },
+  "menu": {
+    "eyebrow": "Menu",
+    "title": "Full menu",
+    "description": "Prices are in AZN. Check details and allergens with the waiter.",
+    "searchPlaceholder": "e.g. plov, kebab, dessert...",
+    "searchAria": "Search menu",
+    "all": "All",
+    "itemWord": "dishes",
+    "note": "* A 10% service charge may be added. Please inform about allergies.",
+    "cats": {
+      "soyuq-qelyanaltilar": "Cold starters",
+      "sorbalar": "Soups",
+      "isti-qelyanaltilar": "Hot starters",
+      "isti-yemekler": "Hot dishes",
+      "tava": "Skillet dishes",
+      "xemir": "Dough dishes",
+      "plov": "Pilafs",
+      "kabab": "Kebabs",
+      "desert": "Desserts"
+    },
+    "items": {
+      "terevaz-buketi": { "name": "Vegetable platter" },
+      "gunun-sorbasi": { "name": "Soup of the day" },
+      "etli-qutab": { "name": "Meat qutab" },
+      "kartof-dolmasi-pomidor-azmasi-ile": { "name": "Potato dolma with tomato relish" }
+    },
+    "itemsByIndex": {
+      "soyuq-qelyanaltilar": [
+        { "name": "Vegetable Bouquet" },
+        { "name": "Cheese Assortment" },
+        { "name": "Nakhchivan Cheese" },
+        { "name": "Mixed Olives" },
+        { "name": "Pickled Assortment" },
+        { "name": "Eggplant Lavangi" },
+        { "name": "Tomato Appetizer" },
+        { "name": "Spicy Vegetable Appetizer" },
+        { "name": "Smoked Fish Assortment" },
+        { "name": "Bean Fisindjan" },
+        { "name": "Cucumber in Vinegar" },
+        { "name": "Sorrel with Onion and Vinegar" },
+        { "name": "Tongue Salad" },
+        { "name": "Shepherd’s Salad with Chanakh Cheese" },
+        { "name": "Cherry and Tomato Salad" },
+        { "name": "Crispy Eggplant Salad" },
+        { "name": "Boulevard Salad" }
+      ],
+      "sorbalar": [
+        { "name": "Soup of the Day" },
+        { "name": "Dushbara" },
+        { "name": "Soup with Dried Yogurt and Noodles" },
+        { "name": "Dovga with Meat and Chickpeas" }
+      ],
+      "isti-qelyanaltilar": [
+        { "name": "Qutab with Meat" },
+        { "name": "Qutab with Herbs" },
+        { "name": "Qutab with Pumpkin" },
+        { "name": "Herb Kuku (Azerbaijani herb omelet)" },
+        { "name": "Walnut Kuku" },
+        { "name": "Grilled Flatbread with Cheese" }
+      ],
+      "isti-yemekler": [
+        { "name": "Stuffed Potatoes with Tomato Sauce" },
+        { "name": "Smoked Kufta-Bozbash" },
+        { "name": "Veal with Barberries and Onion" },
+        { "name": "Sheki Piti" },
+        { "name": "Govurma" },
+        { "name": "Eggplant Dolma" },
+        { "name": "Stuffed Onions with Chickpea Purée" }
+      ],
+      "tava": [
+        { "name": "Sadj with Lamb (for 4 persons)" },
+        { "name": "Sadj with Veal (for 4 persons)" },
+        { "name": "Sadj with Chicken (for 4 persons)" },
+        { "name": "Moody Chicken (for 2 persons)" },
+        { "name": "Fish Buglama" },
+        { "name": "Jiz-Biz" },
+        { "name": "Lamb Ribs with Pomegranate and Chestnuts" },
+        { "name": "Shepherd’s Fry with Lamb Shank" },
+        { "name": "Salmon with Spinach in Cream Sauce" }
+      ],
+      "xemir": [
+        { "name": "Khengel with Meat" },
+        { "name": "Khengel with Chicken" },
+        { "name": "Gurza (boiled / fried)" },
+        { "name": "Fasali" }
+      ],
+      "plov": [
+        { "name": "Shah Pilaf (pre-order)" },
+        { "name": "Dill and Green Bean Pilaf with Lamb Leg" },
+        { "name": "Cherry Pilaf with Lamb Leg" },
+        { "name": "Shusha Pilaf" }
+      ],
+      "kabab": [
+        { "name": "Lyulya Kebab" },
+        { "name": "Lamb Kebab" },
+        { "name": "Lamb Entrecote" },
+        { "name": "Veal Basturma" },
+        { "name": "Lamb Basturma" },
+        { "name": "Chicken Kebab" },
+        { "name": "Sturgeon Kebab" },
+        { "name": "Grilled Baby Chicken" },
+        { "name": "Khan Kebab" },
+        { "name": "Koroghlu Kebab" },
+        { "name": "Vegetable Kebab" },
+        { "name": "Kullama Potatoes" }
+      ],
+      "desert": [
+        { "name": "Azerbaijani National Pastry" },
+        { "name": "San Sebastian Cheesecake" },
+        { "name": "Napoleon Cake" },
+        { "name": "Govud" },
+        { "name": "Absheron Cake" },
+        { "name": "Blue Berry Firni (milk pudding)" },
+        { "name": "Honey Cake" },
+        { "name": "Ice Cream" },
+        { "name": "Fairy Tale Cake" },
+        { "name": "Mixed Fruits" }
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Restaurant • Baku",
+    "desc": "A restaurant bringing traditional Azerbaijani cuisine in a modern presentation. In the quiet part of the New Boulevard, near the Aquatic Palace, we invite you for dinner.",
+    "ctaReserve": "Reserve a table",
+    "ctaMenu": "View menu",
+    "addrLine1": "15 Ahad Yaqubov, Baku, Azerbaijan",
+    "addrLine2": "Near Aquatic Palace, New Boulevard",
+    "hoursPrefix": "Daily:",
+    "hoursValue": "08:00 – 23:00",
+    "rightEyebrow": "For this evening",
+    "rightTitle": "Shah pilaf & selected kebabs",
+    "rightDesc": "Reserve a calm, light dinner by the sea, away from the rush.",
+    "rightToday": "Available tables today",
+    "rightLimited": "Limited",
+    "rightNote": "Group and private events can have custom menu and service."
+  },
+  "footer": {
+    "tagline": "Traditional Azerbaijani cuisine in a modern presentation.",
+    "address": "15 Ahad Yaqubov St., Baku, Azerbaijan AZ1003",
+    "hours": "Daily 08:00 – 23:00",
+    "call": "Call",
+    "copyright": "© {year} Boulevard 1909. All rights reserved.",
+    "createdBy": "Created by"
+  },
+  "res": {
+    "eyebrow": "Reservation",
+    "title": "Choose your table online",
+    "desc": "Fill the short form and our team will contact you to confirm the booking. For urgent reservations, call directly.",
+    "call": "Call",
+    "whNote": "To write on WhatsApp, you will be redirected after submitting the form.",
+    "labelName": "Full name",
+    "labelPhone": "Phone",
+    "labelDate": "Date",
+    "labelTime": "Time",
+    "labelPeople": "Guests",
+    "labelNote": "Note (optional)",
+    "submit": "Send reservation request via WhatsApp",
+    "waPrefix": "Boulevard 1909 reservation request:",
+    "waName": "Name",
+    "waPhone": "Phone",
+    "waDate": "Date",
+    "waTime": "Time",
+    "waPeople": "Guests",
+    "waNote": "Note"
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Ambience",
+    "desc": "Explore the interior and selected dishes of Boulevard 1909.",
+    "img1Title": "Shah pilaf",
+    "img1Sub": "National pilaf presentation",
+    "img2Title": "Kebab assortment",
+    "img2Sub": "From the mangal",
+    "img3Title": "Dessert selection",
+    "img3Sub": "National and modern desserts"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Traditional recipes, modern presentation",
+    "p1": "Boulevard 1909 is a city restaurant blending classic flavors of Azerbaijani cuisine with a minimalist presentation.",
+    "p2": "Located in the quiet part of the New Boulevard. A bright interior, spacious tables, and a calm atmosphere — ideal for family lunches, business meetings, or romantic dinners.",
+    "featKitchen": "Kitchen",
+    "featKitchenText": "Shah pilaf, kebabs, traditional dishes and national desserts.",
+    "featPhilosophy": "Philosophy",
+    "featPhilosophyText": "Selected local produce, balanced portions and modern service.",
+    "featAtmos": "Atmosphere",
+    "featAtmosText": "Calm, refined, with background music. Service centered around the guest.",
+    "cardEyebrow": "Today’s menu",
+    "cardTitle": "Shah pilaf, selected kebabs and desserts",
+    "cardText": "For groups and private events, write to us — we adapt the menu to your format.",
+    "hoursLabel": "Hours",
+    "hoursValue": "Daily 08:00 – 23:00",
+    "addrLabel": "Address",
+    "addrValue": "15 Ahad Yaqubov St., New Boulevard — near Aquatic Palace",
+    "contactLabel": "Contact"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "How to reach us?",
+    "desc": "Reach us by phone, WhatsApp or Instagram. Use the map below for directions.",
+    "addr": "15 Ahad Yaqubov St., Baku, Azerbaijan AZ1003 — New Boulevard, near Aquatic Palace",
+    "phone": "Phone",
+    "hoursLabel": "Opening hours",
+    "hoursValue": "Daily 08:00 – 23:00"
+  },
+  "homeMenu": {
+    "eyebrow": "Menu",
+    "title": "Featured dishes",
+    "desc": "A few of our favorites below. View the full menu in our printed menu in the restaurant."
+  },
+  "homeAtmos": {
+    "eyebrow": "Look",
+    "title": "Ambience",
+    "desc": "Calm, refined interior with warm tones. Short video clips convey the sense of place."
+  },
+  "homeInfo": {
+    "hours": "Hours",
+    "hoursValue": "Daily 08:00 – 23:00",
+    "address": "Address",
+    "addressValue": "15 Ahad Yaqubov St., New Boulevard, Baku",
+    "map": "View on map"
+  },
+  "homeCTA": {
+    "eyebrow": "Reservation",
+    "title": "Book a table for tonight",
+    "desc": "Fill the short form or write via WhatsApp.",
+    "btnReserve": "Online reservation",
+    "btnWhatsApp": "Write on WhatsApp",
+    "quick": "Quick info",
+    "infoHours": "Hours: 08:00 – 23:00",
+    "infoAddr": "Address: New Boulevard, 15 Ahad Yaqubov St.",
+    "infoPhone": "Phone: +994 10 100 1909",
+    "waText": "Boulevard 1909 — reservation request"
+  },
+  "testimonials": {
+    "eyebrow": "Reviews",
+    "title": "What guests say",
+    "desc": "Selected quotes. For more, check our Instagram.",
+    "prev": "Prev",
+    "next": "Next",
+    "list": [
+      { "name": "Nigar A.", "text": "Refined atmosphere, attentive service. Pilaf and kebabs were perfectly balanced." },
+      { "name": "Rauf M.", "text": "In the quiet part of New Boulevard, by the sea — ideal for a tasteful evening." },
+      { "name": "Elnara K.", "text": "Menu is classic in taste, modern in presentation. We will return." }
+    ]
+  },
+  "seo": {
+    "home": { "title": "Boulevard 1909 — Traditional cuisine, modern presentation", "desc": "Azerbaijani cuisine in a modern presentation. New Boulevard, Baku." },
+    "menu": { "title": "Menu — Boulevard 1909", "desc": "Full menu: pilafs, kebabs, starters and desserts." },
+    "gallery": { "title": "Gallery — Boulevard 1909", "desc": "Interior and selected dishes." },
+    "reservation": { "title": "Reservation — Boulevard 1909", "desc": "Choose your table online and send a WhatsApp request." },
+    "contact": { "title": "Contact — Boulevard 1909", "desc": "Address, phone, hours and map." }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "home": "Ana səhifə",
+    "menu": "Menyu",
+    "gallery": "Qalereya",
+    "reservation": "Rezervasiya",
+    "contact": "Əlaqə",
+    "open": "Menyunu aç",
+    "close": "Menyunu bağla"
+  },
+  "menu": {
+    "eyebrow": "Menyu",
+    "title": "Tam menyu",
+    "description": "Qiymətlər AZN-dir. Detallar və allergenlər üçün ofisiantla yoxlayın.",
+    "searchPlaceholder": "Məs: plov, kabab, desert...",
+    "searchAria": "Menyu axtar",
+    "all": "Hamısı",
+    "itemWord": "yemək",
+    "note": "* Hesabınıza 10% xidmət haqqı əlavə edilə bilər. Zəhmət olmasa, qida allergiyanız barədə ofisianta məlumat verin.",
+    "cats": {
+      "soyuq-qelyanaltilar": "Soyuq qəlyanaltılar",
+      "sorbalar": "Şorbalar",
+      "isti-qelyanaltilar": "İsti qəlyanaltılar",
+      "isti-yemekler": "İsti yeməklər",
+      "tava": "Tava yeməkləri",
+      "xemir": "Xəmir yeməkləri",
+      "plov": "Plovlar",
+      "kabab": "Kabablar",
+      "desert": "Desertlər"
+    },
+    "items": {
+      "terevaz-buketi": { "name": "Tərəvəz buketi" },
+      "gunun-sorbasi": { "name": "Günün şorbası" },
+      "etli-qutab": { "name": "Ətli qutab" },
+      "kartof-dolmasi-pomidor-azmasi-ile": { "name": "Kartof dolması pomidor azması ilə" }
+    }
+  },
+  "hero": {
+    "eyebrow": "Restaurant • Bakı",
+    "desc": "Ənənəvi Azərbaycan mətbəxini müasir təqdimatda yaşadan restoran. Yeni Bulvarın sakit hissəsində, Su İdman Sarayının yaxınlığında sizi axşam yeməyinə dəvət edirik.",
+    "ctaReserve": "Rezervasiya et",
+    "ctaMenu": "Menyuya bax",
+    "addrLine1": "15 Ahad Yaqubov, Bakı, Azərbaycan",
+    "addrLine2": "Su İdman Sarayı yaxınlığı, Yeni Bulvar",
+    "hoursPrefix": "Hər gün:",
+    "hoursValue": "08:00 – 23:00",
+    "rightEyebrow": "Bu axşam üçün",
+    "rightTitle": "Şah plov və seçmə kabablar",
+    "rightDesc": "Dəniz kənarında, səs-küydən uzaq, sakit və işıqlı bir axşam üçün rezervasiya edin.",
+    "rightToday": "Bu gün üçün boş masalar",
+    "rightLimited": "Limitli sayda",
+    "rightNote": "Qrup və xüsusi tədbirlər üçün ayrıca menyu və servis mümkündür."
+  },
+  "footer": {
+    "tagline": "Ənənəvi Azərbaycan mətbəxi, müasir təqdimatda.",
+    "address": "15 Ahad Yaqubov küç., Bakı, Azərbaycan AZ1003",
+    "hours": "Hər gün 08:00 – 23:00",
+    "call": "Zəng",
+    "copyright": "© {year} Boulevard 1909. Bütün hüquqlar qorunur.",
+    "createdBy": "Created by"
+  },
+  "res": {
+    "eyebrow": "Rezervasiya",
+    "title": "Masanızı onlayn seçin",
+    "desc": "Qısa formanı doldurun, komandamız sizinlə əlaqə saxlayıb rezervasiyanı təsdiq etsin. Təcili rezervasiya üçün birbaşa zəng edə bilərsiniz.",
+    "call": "Zəng",
+    "whNote": "WhatsApp ilə yazmaq üçün formanı göndərdikdən sonra yönləndiriləcəksiniz.",
+    "labelName": "Ad və soyad",
+    "labelPhone": "Telefon",
+    "labelDate": "Tarix",
+    "labelTime": "Saat",
+    "labelPeople": "Şəxs sayı",
+    "labelNote": "Qeyd (ixtiyari)",
+    "submit": "WhatsApp ilə rezervasiya sorğusu göndər",
+    "waPrefix": "Boulevard 1909 rezervasiya sorğusu:",
+    "waName": "Ad",
+    "waPhone": "Telefon",
+    "waDate": "Tarix",
+    "waTime": "Saat",
+    "waPeople": "Şəxslərin sayı",
+    "waNote": "Qeyd"
+  },
+  "gallery": {
+    "eyebrow": "Görünüş",
+    "title": "Məkan atmosferi",
+    "desc": "Boulevard 1909-un interyeri və seçmə yeməkləri ilə tanış olun.",
+    "img1Title": "Şah plov",
+    "img1Sub": "Milli plov təqdimatı",
+    "img2Title": "Kabab assorti",
+    "img2Sub": "Manqal üstü seçmələr",
+    "img3Title": "Desert seçimi",
+    "img3Sub": "Milli və müasir desertlər"
+  },
+  "about": {
+    "eyebrow": "Haqqımızda",
+    "title": "Ənənəvi reseptlər, müasir təqdimat",
+    "p1": "Boulevard 1909 — şəhər restoranıdır; Azərbaycan mətbəxinin klassik dadlarını minimalistik təqdimatla birləşdirir.",
+    "p2": "Məkanımız Yeni Bulvarın sakit hissəsində yerləşir. İşıqlı interyer, geniş masalar və səs-küydən uzaq atmosfer — ailə naharı, iş görüşləri və ya romantik axşam üçün ideal balansdır.",
+    "featKitchen": "Mətbəx",
+    "featKitchenText": "Şah plov, kabablar, ənənəvi xörəklər və milli desertlər.",
+    "featPhilosophy": "Fəlsəfə",
+    "featPhilosophyText": "Seçilmiş yerli məhsullar, balanslı porsiyalar və müasir servis.",
+    "featAtmos": "Atmosfer",
+    "featAtmosText": "Sakit, zərif, fon musiqisi ilə. Qonağın mərkəzdə olduğu xidmət.",
+    "cardEyebrow": "Günün menyusu",
+    "cardTitle": "Şah plov, seçmə kabablar və desertlər",
+    "cardText": "Qrup rezervasiyası və xüsusi menyu üçün bizə yazmağınız kifayətdir. Komandamız menyunu tədbirinizə uyğunlaşdırır.",
+    "hoursLabel": "İş saatları",
+    "hoursValue": "Hər gün 08:00 – 23:00",
+    "addrLabel": "Ünvan",
+    "addrValue": "15 Ahad Yaqubov küç., Yeni Bulvar — Su İdman Sarayı yaxınlığı",
+    "contactLabel": "Əlaqə"
+  },
+  "contact": {
+    "eyebrow": "Əlaqə",
+    "title": "Bizə necə çata bilərsiniz?",
+    "desc": "Telefon, WhatsApp və ya Instagram-la əlaqə saxlayın. Yönləndirmə üçün aşağıdakı xəritədən istifadə edin.",
+    "addr": "15 Ahad Yaqubov küç., Bakı, Azərbaycan AZ1003 — Yeni Bulvar, Su İdman Sarayı yaxınlığı",
+    "phone": "Telefon",
+    "hoursLabel": "İş saatları",
+    "hoursValue": "Hər gün 08:00 – 23:00"
+  },
+  "homeMenu": {
+    "eyebrow": "Menyu",
+    "title": "Seçilmiş yeməklər",
+    "desc": "Aşağıda menyudan bir neçə sevimli yeməyi təqdim edirik. Tam menyunu restoran daxilində tərtib edilmiş fiziki menyudan görə bilərsiniz."
+  },
+  "homeAtmos": {
+    "eyebrow": "Görünüş",
+    "title": "Məkan atmosferi",
+    "desc": "Sakit, zərif interyer və isti tonlar. Aşağıdakı qısa video parçaları məkanın hissini çatdırmaq üçündür."
+  },
+  "homeInfo": {
+    "hours": "İş saatları",
+    "hoursValue": "Hər gün 08:00 – 23:00",
+    "address": "Ünvan",
+    "addressValue": "15 Ahad Yaqubov küç., Yeni Bulvar, Bakı",
+    "map": "Xəritədə bax"
+  },
+  "homeCTA": {
+    "eyebrow": "Rezervasiya",
+    "title": "Bu axşam üçün masa ayırın",
+    "desc": "Qısa formanı doldurun və ya birbaşa WhatsApp-la yazın.",
+    "btnReserve": "Onlayn rezervasiya",
+    "btnWhatsApp": "WhatsApp ilə yazın",
+    "quick": "Qısa məlumat",
+    "infoHours": "İş saatları: 08:00 – 23:00",
+    "infoAddr": "Ünvan: Yeni Bulvar, 15 Ahad Yaqubov küç.",
+    "infoPhone": "Telefon: +994 10 100 1909",
+    "waText": "Boulevard 1909 — rezervasiya sorğusu"
+  },
+  "testimonials": {
+    "eyebrow": "Rəylər",
+    "title": "Qonaqlarımız nə deyir",
+    "desc": "Seçilmiş qısa fikirlər. Daha çox rəy üçün Instagram səhifəmizə baxın.",
+    "prev": "Geri",
+    "next": "İrəli",
+    "list": [
+      { "name": "Nigar A.", "text": "Atmosfer çox zərif, servis diqqətlidir. Plov və kabablar mükəmməl balansda idi." },
+      { "name": "Rauf M.", "text": "Yeni Bulvarın sakit hissəsində, dəniz kənarında zövqlü axşam üçün ideal məkan." },
+      { "name": "Elnara K.", "text": "Menyu klassik daddadır, təqdimat isə müasir. Yenidən gələcəyik." }
+    ]
+  },
+  "seo": {
+    "home": { "title": "Boulevard 1909 — Ənənəvi mətbəx, müasir təqdimat", "desc": "Boulevard 1909 — Azərbaycan mətbəxini müasir təqdimatda təqdim edən restoran. Yeni Bulvar, Bakı." },
+    "menu": { "title": "Menyu — Boulevard 1909", "desc": "Tam menyu: plovlar, kabablar, qəlyanaltılar və desertlər." },
+    "gallery": { "title": "Qalereya — Boulevard 1909", "desc": "İnteryer və seçmə yeməklərdən görüntülər." },
+    "reservation": { "title": "Rezervasiya — Boulevard 1909", "desc": "Masanızı onlayn seçin və WhatsApp ilə sorğu göndərin." },
+    "contact": { "title": "Əlaqə — Boulevard 1909", "desc": "Ünvan, telefon, iş saatları və xəritə." }
+  }
+}
+
