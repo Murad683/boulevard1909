@@ -1,6 +1,8 @@
 import React from 'react'
 import SectionTitle from './SectionTitle'
 import { useI18n } from '../i18n/i18n'
+import instagramIcon from '../assets/instagram-icon.svg'
+import phoneIcon from '../assets/phone.svg'
 
 const Contact = () => {
   const { t } = useI18n()
@@ -18,22 +20,29 @@ const Contact = () => {
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-accentGold">{t('contact.phone')}</p>
-              <p className="mt-1">
-                <a href="tel:+994101001909" className="text-textMain underline decoration-accentGold/60 underline-offset-4">
-                  +994 10 100 1909
+              <div className="mt-2">
+                <a
+                  href="tel:+994101001909"
+                  className="inline-flex min-h-[44px] items-center gap-2 rounded-full border border-accentGold/40 px-4 py-2 text-textMain transition hover:bg-primaryBg hover:text-lightBg tap-scale"
+                >
+                  <img src={phoneIcon} alt="" className="h-4 w-4" aria-hidden />
+                  <span>+994 10 100 1909</span>
                 </a>
-              </p>
+              </div>
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-accentGold">Instagram</p>
-              <a
-                href="https://www.instagram.com/boulevard1909/"
-                target="_blank"
-                rel="noreferrer"
-                className="mt-1 inline-flex items-center gap-2 text-textMain underline decoration-accentGold/60 underline-offset-4"
-              >
-                @boulevard1909
-              </a>
+              <div className="mt-2">
+                <a
+                  href="https://www.instagram.com/boulevard1909/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex min-h-[44px] items-center gap-2 rounded-full border border-accentGold/40 px-4 py-2 text-textMain transition hover:bg-primaryBg hover:text-lightBg tap-scale"
+                >
+                  <img src={instagramIcon} alt="" className="h-4 w-4" aria-hidden />
+                  <span>@boulevard1909</span>
+                </a>
+              </div>
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-accentGold">{t('contact.hoursLabel')}</p>
@@ -57,4 +66,3 @@ const Contact = () => {
 }
 
 export default Contact
-

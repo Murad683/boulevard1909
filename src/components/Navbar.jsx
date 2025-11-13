@@ -36,15 +36,12 @@ const Navbar = () => {
   }, [menuShown, menuMounted])
 
   useEffect(() => {
-    if (menuShown) document.body.style.overflow = 'hidden'
-    else document.body.style.overflow = ''
     const onKey = (e) => {
       if (e.key === 'Escape') setMenuShown(false)
     }
     window.addEventListener('keydown', onKey)
     return () => {
       window.removeEventListener('keydown', onKey)
-      document.body.style.overflow = ''
     }
   }, [menuShown])
 
@@ -67,7 +64,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 h-16 transition duration-300 ${
+      className={`fixed inset-x-0 top-0 z-40 h-14 md:h-16 transition duration-300 ${
         isScrolled
           ? 'bg-primaryBg/95 backdrop-blur border-b border-accentGold/20'
           : 'bg-transparent border-b border-transparent'
@@ -75,7 +72,7 @@ const Navbar = () => {
     >
       <nav className="container-layout flex h-full items-center justify-between">
         <Link to="/" className="flex items-center gap-2 text-left">
-          <span className="rounded-full border border-accentGold/40 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.35em] text-accentGold">
+          <span className="rounded-full border border-accentGold/40 px-2.5 py-0.5 text-[9px] sm:text-[10px] font-medium uppercase tracking-[0.35em] text-accentGold">
             Boulevard 1909
           </span>
         </Link>
@@ -85,7 +82,7 @@ const Navbar = () => {
             <Link
               key={item.to}
               to={item.to}
-              className={`nav-link ${isActive(item.to) ? 'text-accentGold' : ''}`}
+              className={`nav-link ${isActive(item.to) ? 'is-active' : ''}`}
             >
               {t(item.key)}
             </Link>
@@ -93,32 +90,27 @@ const Navbar = () => {
           <LangSwitch />
         </div>
 
-        <button
-          className="inline-flex flex-col items-center justify-center gap-1 rounded-full border border-accentGold/40 p-2 md:hidden"
-          onClick={toggleMenu}
-          aria-label={menuShown ? t('nav.close') : t('nav.open')}
-          aria-expanded={menuShown}
-          aria-controls="mobile-menu"
-        >
-          <span className="sr-only">{menuShown ? t('nav.close') : t('nav.open')}</span>
-          <span className={`block h-0.5 bg-accentGold transition-all duration-200 ${menuShown ? 'w-6' : 'w-4'}`} />
-          <span className="block h-0.5 w-6 bg-accentGold transition-all duration-200" />
-          <span className={`block h-0.5 bg-accentGold transition-all duration-200 ${menuShown ? 'w-6' : 'w-6'}`} />
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <button
+            className="inline-flex flex-col items-center justify-center gap-1 rounded-full border border-accentGold/40 p-2"
+            onClick={toggleMenu}
+            aria-label={menuShown ? t('nav.close') : t('nav.open')}
+            aria-expanded={menuShown}
+            aria-controls="mobile-menu"
+          >
+            <span className="sr-only">{menuShown ? t('nav.close') : t('nav.open')}</span>
+            <span className={`block h-0.5 bg-accentGold transition-all duration-200 ${menuShown ? 'w-6' : 'w-4'}`} />
+            <span className="block h-0.5 w-6 bg-accentGold transition-all duration-200" />
+            <span className={`block h-0.5 bg-accentGold transition-all duration-200 ${menuShown ? 'w-6' : 'w-6'}`} />
+          </button>
+        </div>
       </nav>
 
       {menuMounted && (
         <>
           <div
-            className={`fixed inset-0 z-30 md:hidden transition-opacity duration-300 ${
-              menuShown ? 'opacity-100 bg-black/60' : 'opacity-0 bg-black/60'
-            }`}
-            onClick={() => setMenuShown(false)}
-            aria-hidden
-          />
-          <div
             id="mobile-menu"
-            className={`fixed top-16 inset-x-0 z-40 border-t border-accentGold/20 bg-primaryBg shadow-xl md:hidden transform transition-all duration-300 ${
+            className={`fixed top-14 md:top-16 inset-x-0 z-40 border-t border-accentGold/20 bg-primaryBg md:hidden transform transition-all duration-300 ${
               menuShown ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
             }`}
           >
@@ -132,7 +124,7 @@ const Navbar = () => {
                   to={item.to}
                   onClick={() => setMenuShown(false)}
                   className={`nav-link text-left py-3 text-sm ${
-                    isActive(item.to) ? 'text-accentGold' : ''
+                    isActive(item.to) ? 'is-active' : ''
                   }`}
                 >
                   {t(item.key)}
@@ -147,4 +139,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-

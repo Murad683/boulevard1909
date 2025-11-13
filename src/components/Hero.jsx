@@ -11,6 +11,7 @@ const Hero = () => {
   return (
     <section id="hero" className="relative flex min-h-[90vh] items-center overflow-hidden bg-primaryBg text-lightBg">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(198,170,118,0.18),_transparent_55%),radial-gradient(circle_at_bottom,_rgba(0,0,0,0.55),_transparent_60%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-black/35 md:bg-black/25" />
 
       <div className="container-layout relative z-10 grid items-center gap-12 py-28 md:grid-cols-[1.1fr,0.9fr]">
         <div>
@@ -18,7 +19,7 @@ const Hero = () => {
           <h1 className="font-serif text-4xl tracking-[0.12em] text-lightBg sm:text-5xl md:text-[3.25rem]">BOULEVARD 1909</h1>
           <p className="mt-5 max-w-xl text-sm leading-relaxed text-lightBg/80 sm:text-base">{t('hero.desc')}</p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4">
+          <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4">
             <button onClick={goReservation} className="btn-primary">{t('hero.ctaReserve')}</button>
             <button onClick={goMenu} className="btn-secondary">{t('hero.ctaMenu')}</button>
           </div>
@@ -60,9 +61,14 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      <div className="pointer-events-none absolute bottom-5 left-1/2 -translate-x-1/2">
+        <div className="flex h-8 w-8 items-center justify-center rounded-full border border-lightBg/40 text-lightBg/80">
+          <span aria-hidden>↓</span>
+        </div>
+      </div>
     </section>
   )
 }
 
 export default Hero
-

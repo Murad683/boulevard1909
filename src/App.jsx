@@ -62,7 +62,7 @@ const App = () => {
       <I18nProvider>
         <div className="min-h-screen bg-lightBg">
           <Navbar />
-          <main className="pt-20">
+          <main className="pt-16 md:pt-20">
             <ScrollAndRoutes />
           </main>
           <Footer />

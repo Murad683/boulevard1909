@@ -24,14 +24,14 @@ const Gallery = () => {
           <p className="max-w-md text-sm leading-relaxed text-textMuted">{t('gallery.desc')}</p>
         </div>
 
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {images.map((img) => (
-            <div key={img.title} className="group card-soft relative flex h-56 items-end overflow-hidden">
-              <img src={img.src} alt={img.title} className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" />
+            <div key={img.title} className="group card-soft tap-scale relative flex aspect-square md:aspect-auto md:h-56 items-end overflow-hidden">
+              <img src={img.src} alt={img.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 sm:group-hover:scale-[1.03]" />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               <div className="relative z-10 w-full p-4">
-                <p className="font-serif text-sm text-lightBg">{img.title}</p>
-                <p className="mt-1 text-xs text-lightBg/80">{img.subtitle}</p>
+                <p className="font-serif text-[12px] text-lightBg">{img.title}</p>
+                <p className="mt-1 text-[10px] text-lightBg/70">{img.subtitle}</p>
               </div>
             </div>
           ))}

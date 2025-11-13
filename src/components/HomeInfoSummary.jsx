@@ -7,18 +7,27 @@ const HomeInfoSummary = () => {
     <section className="section-padding bg-[#f0e7da]">
       <div className="container-layout grid gap-6 md:grid-cols-2">
         <div className="card-soft p-6 sm:p-8">
-          <p className="text-xs uppercase tracking-[0.3em] text-accentGold">{t('homeInfo.hours')}</p>
-          <p className="mt-2 text-textMain">{t('homeInfo.hoursValue')}</p>
-          <p className="mt-6 text-xs uppercase tracking-[0.3em] text-accentGold">{t('homeInfo.address')}</p>
-          <p className="mt-2 text-textMain">{t('homeInfo.addressValue')}</p>
-          <a
-            href="https://www.google.com/maps?q=Boulevard%201909%20Baku"
-            target="_blank"
-            rel="noreferrer"
-            className="mt-4 inline-flex items-center text-sm text-textMain underline decoration-accentGold/60 underline-offset-4"
-          >
-            {t('homeInfo.map')}
-          </a>
+          <div className="grid gap-3 sm:grid-cols-3">
+            <div className="rounded-xl border border-accentGold/25 bg-cardBg/60 p-4 shadow-sm">
+              <p className="text-[11px] uppercase tracking-[0.3em] text-accentGold">{t('homeInfo.hours')}</p>
+              <p className="mt-2 text-sm text-textMain">{t('homeInfo.hoursValue')}</p>
+            </div>
+            <div className="rounded-xl border border-accentGold/25 bg-cardBg/60 p-4 shadow-sm">
+              <p className="text-[11px] uppercase tracking-[0.3em] text-accentGold">{t('homeInfo.address')}</p>
+              <p className="mt-2 text-sm text-textMain">{t('homeInfo.addressValue')}</p>
+            </div>
+            <div className="rounded-xl border border-accentGold/25 bg-cardBg/60 p-4 shadow-sm">
+              <p className="text-[11px] uppercase tracking-[0.3em] text-accentGold">Map</p>
+              <a
+                href="https://www.google.com/maps?q=Boulevard%201909%20Baku"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-2 inline-flex min-h-[44px] items-center justify-center rounded-full border border-accentGold/40 px-4 py-2 text-sm text-textMain transition hover:bg-primaryBg hover:text-lightBg tap-scale"
+              >
+                {t('homeInfo.map')}
+              </a>
+            </div>
+          </div>
         </div>
         <div className="card-soft overflow-hidden">
           <iframe
@@ -35,4 +44,3 @@ const HomeInfoSummary = () => {
 }
 
 export default HomeInfoSummary
-

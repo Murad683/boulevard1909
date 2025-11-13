@@ -10,7 +10,7 @@ const PageFade = ({ children }) => {
 
   return (
     <div
-      className={`transition-all duration-300 motion-reduce:transition-none ${
+      className={`transition-all duration-[400ms] motion-reduce:transition-none ${
         show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-1'
       }`}
     >
@@ -20,4 +20,3 @@ const PageFade = ({ children }) => {
 }
 
 export default PageFade
-

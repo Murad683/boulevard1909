@@ -11,6 +11,7 @@ const SectionTitle = ({ eyebrow, title, align = 'left' }) => {
       <h2 className="font-serif text-3xl sm:text-4xl tracking-wide text-textMain">
         {title}
       </h2>
+      <div className={`mt-3 h-px w-10 bg-accentGold/30 ${align === 'center' ? 'mx-auto' : ''}`} />
     </div>
   )
 }

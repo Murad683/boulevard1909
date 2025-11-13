@@ -61,7 +61,7 @@ const MenuSection = () => {
           <div className="-mx-1 flex flex-wrap gap-2 px-1 py-1 justify-center md:col-span-2 md:justify-center">
             <button
               onClick={() => setActiveCat('all')}
-              className={`whitespace-nowrap rounded-full px-4 py-2 text-xs transition ${
+              className={`whitespace-nowrap rounded-full px-4 py-2 text-xs transition min-h-[44px] tap-scale ${
                 activeCat === 'all'
                   ? 'bg-primaryBg text-lightBg'
                   : 'bg-cardBg text-textMain hover:bg-primaryBg/10'
@@ -73,7 +73,7 @@ const MenuSection = () => {
               <button
                 key={c.id}
                 onClick={() => setActiveCat(c.id)}
-                className={`whitespace-nowrap rounded-full px-4 py-2 text-xs transition ${
+                className={`whitespace-nowrap rounded-full px-4 py-2 text-xs transition min-h-[44px] tap-scale ${
                   activeCat === c.id
                     ? 'bg-primaryBg text-lightBg'
                     : 'bg-cardBg text-textMain hover:bg-primaryBg/10'

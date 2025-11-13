@@ -6,7 +6,7 @@
   html {
     scroll-behavior: smooth;
     /* Fixed header offset for in-page anchors */
-    scroll-padding-top: 90px;
+    scroll-padding-top: 72px;
   }
 
   :root {
@@ -14,7 +14,7 @@
   }
 
   body {
-    @apply bg-lightBg text-textMain font-sans;
+    @apply bg-lightBg text-textMain font-sans text-[15px] leading-relaxed sm:text-base;
   }
 
   /* Slightly increase default paragraph line-height for readability */
@@ -30,7 +30,7 @@
 
 @layer components {
   .container-layout {
-    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-6xl mx-auto px-5 sm:px-6 lg:px-8;
   }
 
   .section-padding {
@@ -42,19 +42,36 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-full bg-accentGold px-6 py-3 text-sm font-medium tracking-wide text-primaryBg transition duration-200 hover:bg-[#d4ba7e] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accentGold/60;
+    @apply inline-flex items-center justify-center rounded-full bg-accentGold px-6 py-3 text-sm font-medium tracking-wide text-primaryBg transition duration-200 hover:bg-[#d4ba7e] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accentGold/60 min-h-[44px] active:scale-[.98] w-full sm:w-auto;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-full border border-accentGold px-6 py-3 text-sm font-medium tracking-wide text-accentGold transition duration-200 hover:bg-primaryBg hover:text-lightBg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accentGold/60;
+    @apply inline-flex items-center justify-center rounded-full border border-accentGold px-6 py-3 text-sm font-medium tracking-wide text-accentGold transition duration-200 hover:bg-primaryBg hover:text-lightBg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accentGold/60 min-h-[44px] active:scale-[.98] w-full sm:w-auto;
   }
 
   .nav-link {
     @apply text-xs tracking-[0.25em] uppercase text-textMuted transition hover:text-accentGold;
   }
+  .nav-link.is-active {
+    @apply text-accentGold relative;
+  }
+  .nav-link.is-active::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 18px;
+    margin: 6px auto 0;
+    background-color: rgba(198,170,118,0.6);
+  }
+  @media (min-width: 768px) {
+    .nav-link.is-active::after { display: none; }
+  }
 }
 
 @layer utilities {
+  .tap-scale {
+    @apply transition-transform active:scale-95;
+  }
   /* Dotted leader to visually connect name and price */
   .leaders {
     background-image: radial-gradient(currentColor 1px, transparent 1px);
