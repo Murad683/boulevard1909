@@ -72,7 +72,7 @@ const Reservation = () => {
                   required
                   value={form.date}
                   onChange={handleChange}
-                  className="mt-2 w-full rounded-2xl border border-accentGold/30 bg-lightBg/60 px-4 py-3 text-base outline-none ring-accentGold/40 transition focus:ring-2"
+                  className="mt-2 w-full rounded-2xl border border-accentGold/30 bg-lightBg/60 px-4 py-3 text-[16px] md:text-base appearance-none outline-none ring-accentGold/40 transition focus:ring-2"
                 />
               </div>
               <div>
@@ -83,7 +83,7 @@ const Reservation = () => {
                   required
                   value={form.time}
                   onChange={handleChange}
-                  className="mt-2 w-full rounded-2xl border border-accentGold/30 bg-lightBg/60 px-4 py-3 text-base outline-none ring-accentGold/40 transition focus:ring-2"
+                  className="mt-2 w-full rounded-2xl border border-accentGold/30 bg-lightBg/60 px-4 py-3 text-[16px] md:text-base appearance-none outline-none ring-accentGold/40 transition focus:ring-2"
                 />
               </div>
               <div>
@@ -121,4 +121,3 @@ const Reservation = () => {
 }
 
 export default Reservation
-
