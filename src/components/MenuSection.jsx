@@ -42,7 +42,7 @@ const MenuSection = () => {
         </div>
 
         <div className="mt-6 grid gap-3 md:grid-cols-[minmax(32rem,1fr),auto] md:items-center">
-          <div className="relative md:max-w-xl lg:max-w-2xl xl:max-w-3xl">
+          <div className="relative md:col-span-2 max-w-none">
             <input
               type="text"
               value={query}
@@ -137,4 +137,3 @@ const MenuSection = () => {
 }
 
 export default MenuSection
-
