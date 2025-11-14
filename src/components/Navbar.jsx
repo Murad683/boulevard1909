@@ -13,6 +13,7 @@ const linkDefs = [
 
 const Navbar = () => {
   const { t } = useI18n()
+  const [navReady, setNavReady] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [menuMounted, setMenuMounted] = useState(false)
   const [menuShown, setMenuShown] = useState(false)
@@ -22,6 +23,19 @@ const Navbar = () => {
     const handleScroll = () => setIsScrolled(window.scrollY > 40)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const prefersReduced =
+      typeof window !== 'undefined' &&
+      window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (prefersReduced) {
+      setNavReady(true)
+      return
+    }
+    const id = requestAnimationFrame(() => setNavReady(true))
+    return () => cancelAnimationFrame(id)
   }, [])
 
   useEffect(() => {
@@ -64,13 +78,15 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 h-14 md:h-16 transition duration-300 ${
+      className={`fixed inset-x-0 top-0 z-40 transition-all duration-500 ease-out ${
+        navReady ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
+      } ${
         isScrolled
           ? 'bg-primaryBg/95 backdrop-blur border-b border-accentGold/20'
           : 'bg-transparent border-b border-transparent'
       }`}
     >
-      <nav className="container-layout flex h-full items-center justify-between">
+      <nav className="container-layout flex items-center justify-between py-3 md:py-4">
         <Link to="/" className="flex items-center gap-2 text-left">
           <span className="rounded-full border border-accentGold/40 px-2.5 py-0.5 text-[9px] sm:text-[10px] font-medium uppercase tracking-[0.35em] text-accentGold">
             Boulevard 1909
@@ -110,14 +126,11 @@ const Navbar = () => {
         <>
           <div
             id="mobile-menu"
-            className={`fixed top-14 md:top-16 inset-x-0 z-40 border-t border-accentGold/20 bg-primaryBg md:hidden transform transition-all duration-300 ${
+            className={`fixed top-16 md:top-20 inset-x-0 z-40 border-t border-accentGold/20 bg-primaryBg md:hidden transform transition-all duration-300 ${
               menuShown ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
             }`}
           >
             <div className="container-layout flex flex-col py-2">
-              <div className="flex justify-center py-2">
-                <LangSwitch onChange={() => setMenuShown(false)} />
-              </div>
               {linkDefs.map((item) => (
                 <Link
                   key={item.to}
@@ -130,6 +143,9 @@ const Navbar = () => {
                   {t(item.key)}
                 </Link>
               ))}
+              <div className="mt-4 border-t border-accentGold/25 pt-3 flex justify-center">
+                <LangSwitch onChange={() => setMenuShown(false)} />
+              </div>
             </div>
           </div>
         </>

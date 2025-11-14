@@ -1,33 +1,36 @@
 import React from 'react'
 import SectionTitle from './SectionTitle'
 import { useI18n } from '../i18n/i18n'
+import RevealOnScroll from './RevealOnScroll'
 
 const About = () => {
   const { t } = useI18n()
   return (
     <section id="about" className="section-padding bg-lightBg">
       <div className="container-layout grid gap-12 md:grid-cols-[1.1fr,0.9fr]">
-        <div>
-          <SectionTitle eyebrow={t('about.eyebrow')} title={t('about.title')} />
-          <p className="mt-6 text-sm leading-relaxed text-textMuted sm:text-base">{t('about.p1')}</p>
-          <p className="mt-4 text-sm leading-relaxed text-textMuted sm:text-base">{t('about.p2')}</p>
-          <div className="mt-6 grid gap-4 text-sm text-textMuted sm:grid-cols-3">
-            <div>
+        <RevealOnScroll from="up">
+          <div>
+            <SectionTitle eyebrow={t('about.eyebrow')} title={t('about.title')} />
+            <p className="mt-6 text-sm leading-relaxed text-textMuted sm:text-base">{t('about.p1')}</p>
+            <p className="mt-4 text-sm leading-relaxed text-textMuted sm:text-base">{t('about.p2')}</p>
+            <div className="mt-6 grid gap-4 text-sm text-textMuted sm:grid-cols-3">
+              <div>
               <p className="text-xs uppercase tracking-[0.3em] text-accentGold">{t('about.featKitchen')}</p>
               <p className="mt-1">{t('about.featKitchenText')}</p>
-            </div>
-            <div>
+              </div>
+              <div>
               <p className="text-xs uppercase tracking-[0.3em] text-accentGold">{t('about.featPhilosophy')}</p>
               <p className="mt-1">{t('about.featPhilosophyText')}</p>
-            </div>
-            <div>
+              </div>
+              <div>
               <p className="text-xs uppercase tracking-[0.3em] text-accentGold">{t('about.featAtmos')}</p>
               <p className="mt-1">{t('about.featAtmosText')}</p>
+              </div>
             </div>
           </div>
-        </div>
+        </RevealOnScroll>
 
-        <div className="card-soft relative overflow-hidden">
+        <RevealOnScroll from="right" className="card-soft relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(198,170,118,0.35),_transparent_55%)]" />
           <div className="relative flex h-full flex-col justify-between p-8">
             <div className="space-y-3">
@@ -52,11 +55,10 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </RevealOnScroll>
       </div>
     </section>
   )
 }
 
 export default About
-

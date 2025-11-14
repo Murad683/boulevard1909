@@ -1,12 +1,13 @@
 import React from 'react'
 import { useI18n } from '../i18n/i18n'
+import RevealOnScroll from './RevealOnScroll'
 
 const HomeInfoSummary = () => {
   const { t } = useI18n()
   return (
     <section className="section-padding bg-[#f0e7da]">
       <div className="container-layout grid gap-6 md:grid-cols-2">
-        <div className="card-soft p-6 sm:p-8">
+        <RevealOnScroll from="left" className="card-soft p-6 sm:p-8">
           <div className="grid gap-3 sm:grid-cols-3">
             <div className="rounded-xl border border-accentGold/25 bg-cardBg/60 p-4 shadow-sm">
               <p className="text-[11px] uppercase tracking-[0.3em] text-accentGold">{t('homeInfo.hours')}</p>
@@ -28,8 +29,8 @@ const HomeInfoSummary = () => {
               </a>
             </div>
           </div>
-        </div>
-        <div className="card-soft overflow-hidden">
+        </RevealOnScroll>
+        <RevealOnScroll from="right" className="card-soft overflow-hidden">
           <iframe
             title="Boulevard 1909 location preview"
             src="https://www.google.com/maps?q=Boulevard%201909%20Baku&output=embed"
@@ -37,7 +38,7 @@ const HomeInfoSummary = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
-        </div>
+        </RevealOnScroll>
       </div>
     </section>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import SectionTitle from './SectionTitle'
+import RevealOnScroll from './RevealOnScroll'
 import { menuCategories } from '../data/menu'
 import { useI18n } from '../i18n/i18n'
 
@@ -20,16 +21,23 @@ const HomeMenuShowcase = () => {
     .slice(0, 4)
 
   return (
-    <section className="section-padding bg-[#f3ecdf]">
+    <section id="home-menu-showcase" className="section-padding bg-[#f3ecdf]">
       <div className="container-layout">
-        <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
-          <SectionTitle eyebrow={t('homeMenu.eyebrow')} title={t('homeMenu.title')} />
-          <p className="max-w-md text-sm leading-relaxed text-textMuted">{t('homeMenu.desc')}</p>
-        </div>
+        <RevealOnScroll from="up">
+          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+            <SectionTitle eyebrow={t('homeMenu.eyebrow')} title={t('homeMenu.title')} />
+            <p className="max-w-md text-sm leading-relaxed text-textMuted">{t('homeMenu.desc')}</p>
+          </div>
+        </RevealOnScroll>
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
-          {items.map((item) => (
-            <div key={item.name} className="card-soft p-6 sm:p-8">
+          {items.map((item, idx) => (
+            <RevealOnScroll
+              key={item.name}
+              from="up"
+              delayClass={idx === 0 ? '' : idx === 1 ? 'delay-100' : idx === 2 ? 'delay-150' : 'delay-200'}
+              className="card-soft p-6 sm:p-8"
+            >
               <p className="text-xs uppercase tracking-[0.3em] text-accentGold">{t(`menu.cats.${item.catId}`) || item.cat}</p>
               <h3 className="mt-2 font-serif text-xl tracking-wide text-textMain">{(() => {
                 const key = slugify(item.name)
@@ -52,7 +60,7 @@ const HomeMenuShowcase = () => {
               <div className="mt-4 inline-flex items-center rounded-full bg-primaryBg/90 px-4 py-2 text-lightBg">
                 <span className="text-sm">{item.price}</span>
               </div>
-            </div>
+            </RevealOnScroll>
           ))}
         </div>
       </div>

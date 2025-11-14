@@ -20,7 +20,7 @@ const Reservation = () => {
   return (
     <section id="reservation" className="section-padding bg-lightBg">
       <div className="container-layout grid gap-12 md:grid-cols-[1.1fr,0.9fr]">
-        <div>
+        <div className="md:self-center">
           <SectionTitle eyebrow={t('res.eyebrow')} title={t('res.title')} />
           <p className="mt-6 text-sm leading-relaxed text-textMuted sm:text-base">{t('res.desc')}</p>
           <div className="mt-6 space-y-2 text-sm text-textMuted">
@@ -108,11 +108,11 @@ const Reservation = () => {
                 rows={3}
                 value={form.note}
                 onChange={handleChange}
-                className="mt-2 w-full rounded-2xl border border-accentGold/30 bg-lightBg/60 px-4 py-3 text-base outline-none ring-accentGold/40 transition focus:ring-2"
+                className="mt-2 w-full resize-none rounded-2xl border border-accentGold/30 bg-lightBg/60 px-4 py-3 text-base outline-none ring-accentGold/40 transition focus:ring-2"
               />
             </div>
 
-            <button type="submit" className="btn-primary w-full justify-center py-3 text-[15px]">{t('res.submit')}</button>
+            <button type="submit" className="btn-primary btn-pulse w-full justify-center py-3 text-[15px]">{t('res.submit')}</button>
           </form>
         </div>
       </div>
