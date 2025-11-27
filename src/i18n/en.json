@@ -149,6 +149,8 @@
     "address": "15 Ahad Yaqubov St., Baku, Azerbaijan AZ1003",
     "hours": "Daily 08:00 – 23:00",
     "call": "Call",
+    "navigation": "Navigation",
+    "contactAndReservation": "Contact & Reservation",
     "copyright": "© {year} Boulevard 1909. All rights reserved.",
     "createdBy": "Created by"
   },

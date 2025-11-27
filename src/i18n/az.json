@@ -56,6 +56,8 @@
     "address": "15 Ahad Yaqubov küç., Bakı, Azərbaycan AZ1003",
     "hours": "Hər gün 08:00 – 23:00",
     "call": "Zəng",
+    "navigation": "NAVİGASİYA",
+    "contactAndReservation": "ƏLAQƏ & REZERVASİYA",
     "copyright": "© {year} Boulevard 1909. Bütün hüquqlar qorunur.",
     "createdBy": "Created by"
   },
@@ -169,4 +171,3 @@
     "contact": { "title": "Əlaqə — Boulevard 1909", "desc": "Ünvan, telefon, iş saatları və xəritə." }
   }
 }
-

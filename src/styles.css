@@ -59,6 +59,210 @@
     text-underline-offset: 6px;
     text-decoration-thickness: 1px;
   }
+
+  /* Footer */
+  .footer {
+    color: #f7f3ec;
+  }
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 44px 20px 28px;
+    border-top: 1px solid rgba(198,170,118,0.2);
+  }
+  .footer-columns {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr 1.1fr;
+    column-gap: 64px;
+    row-gap: 32px;
+    align-items: start;
+  }
+  .footer-column {
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(247,243,236,0.8);
+  }
+  .footer-eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(198,170,118,0.9);
+  }
+  .footer-tagline {
+    margin-top: 16px;
+    max-width: 340px;
+    color: rgba(247,243,236,0.82);
+  }
+  .footer-heading {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(198,170,118,0.8);
+    margin-bottom: 14px;
+  }
+  .footer-nav-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 18px;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-nav-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    color: rgba(247,243,236,0.7);
+    transition: color 200ms ease, transform 200ms ease;
+  }
+  .footer-nav-link:hover {
+    color: #c6aa76;
+    transform: translateY(-1px);
+  }
+  .footer-contact-block {
+    display: grid;
+    gap: 10px;
+    color: rgba(247,243,236,0.7);
+  }
+  .footer-contact-line {
+    margin: 0;
+  }
+  .footer-phone {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 0;
+    min-height: 40px;
+    color: #f7f3ec;
+    text-decoration: none;
+    transition: color 200ms ease;
+  }
+  .footer-phone:hover {
+    color: #c6aa76;
+  }
+  .footer-instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    width: fit-content;
+    justify-self: start;
+    align-self: flex-start;
+    border-radius: 999px;
+    border: 1px solid rgba(198,170,118,0.35);
+    color: #f7f3ec;
+    text-decoration: none;
+    transition: border-color 200ms ease, color 200ms ease, background-color 200ms ease;
+  }
+  .footer-instagram:hover {
+    border-color: rgba(198,170,118,0.65);
+    color: #c6aa76;
+    background-color: rgba(0,0,0,0.06);
+  }
+  .footer-instagram-icon {
+    height: 14px;
+    width: 14px;
+  }
+  .footer-bottom {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(198,170,118,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: rgba(247,243,236,0.5);
+  }
+  .footer-credit-link {
+    color: #f7f3ec;
+    text-decoration: underline;
+    text-decoration-color: rgba(198,170,118,0.6);
+    text-underline-offset: 4px;
+  }
+  .footer-credit-link:hover {
+    color: #c6aa76;
+  }
+  @media (max-width: 900px) {
+    .footer-columns {
+      column-gap: 44px;
+      grid-template-columns: 1fr 1fr;
+    }
+    .footer-contact {
+      grid-column: span 2;
+    }
+  }
+  @media (max-width: 768px) {
+    .footer-inner {
+      padding: 36px 18px 24px;
+    }
+    .footer-columns {
+      grid-template-columns: 1fr;
+      row-gap: 32px;
+    }
+    .footer-brand {
+      order: 1;
+    }
+    .footer-contact {
+      order: 2;
+    }
+    .footer-nav {
+      order: 3;
+    }
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      padding-top: 14px;
+    }
+  }
+  @media (max-width: 768px) {
+    .footer-inner {
+      padding-inline: 20px;
+      padding-top: 42px;
+    }
+    .footer-column + .footer-column {
+      margin-top: 26px;
+    }
+    .footer-heading {
+      margin-bottom: 10px;
+    }
+    .footer-columns {
+      row-gap: 24px;
+    }
+    .footer-brand {
+      max-width: 300px;
+    }
+    .footer-tagline {
+      margin-top: 14px;
+    }
+    .footer-contact-block {
+      gap: 8px;
+    }
+    .footer-phone {
+      padding: 8px 0;
+      min-height: 44px;
+    }
+    .footer-instagram {
+      align-self: flex-start;
+      margin-top: 8px;
+    }
+    .footer-nav-list {
+      grid-template-columns: 1fr;
+      gap: 9px;
+    }
+    .footer-bottom {
+      font-size: 12px;
+    }
+    .footer-credit {
+      color: rgba(247,243,236,0.6);
+    }
+  }
+  @media (max-width: 480px) {
+    .footer-inner {
+      padding-inline: 18px;
+    }
+  }
 }
 
 @layer utilities {
