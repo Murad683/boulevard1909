@@ -26,6 +26,7 @@
       "xemir": "Dough dishes",
       "plov": "Pilafs",
       "kabab": "Kebabs",
+      "qelyan": "Hookah",
       "desert": "Desserts"
     },
     "items": {
@@ -113,6 +114,14 @@
         { "name": "Koroghlu Kebab" },
         { "name": "Vegetable Kebab" },
         { "name": "Kullama Potatoes" }
+      ],
+      "qelyan": [
+        { "name": "Winter Dream", "desc": "Signature hookah blend" },
+        { "name": "Mango–Passionfruit Smoothie", "desc": "Signature hookah blend" },
+        { "name": "Marshmallow", "desc": "Signature hookah blend" },
+        { "name": "Cup bowl (Virginia + Burley)", "desc": "Premium tobacco" },
+        { "name": "Cup bowl (cigar leaf, rich nicotine)", "desc": "Premium tobacco" },
+        { "name": "Fruit hookah (your choice)", "desc": "Served in a fruit bowl with grapefruit, pomegranate, lemon or pineapple" }
       ],
       "desert": [
         { "name": "Azerbaijani National Pastry" },

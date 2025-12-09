@@ -124,6 +124,22 @@ export const menuCategories = [
     ],
   },
   {
+    id: 'qelyan',
+    title: 'Qəlyan',
+    items: [
+      { name: 'Qış Yuxusu (Winter Dream)', description: 'Xüsusi qəlyanlar', price: '110 ₼' },
+      { name: 'Manqo–Marakuya Smuzi (Mango–Passionfruit Smoothie)', description: 'Xüsusi qəlyanlar', price: '130 ₼' },
+      { name: 'Marşmello (Marshmallow)', description: 'Xüsusi qəlyanlar', price: '180 ₼' },
+      { name: 'Fincan (Virginia + Burley)', description: 'Premium tütün', price: '60 ₼' },
+      { name: 'Fincan (Siqar yarpağı, zəngin nikotin)', description: 'Premium tütün', price: '80 ₼' },
+      {
+        name: 'Meyvəli qəlyan (seçimlə)',
+        description: 'Meyvə qabında servis; qreyfrut, nar (Göyçay), limon (Astara) və ya ananas seçimi ilə',
+        price: '80 ₼',
+      },
+    ],
+  },
+  {
     id: 'desert',
     title: 'Desertlər',
     items: [

@@ -1,9 +1,9 @@
 import React from 'react'
 import SectionTitle from './SectionTitle'
 import RevealOnScroll from './RevealOnScroll'
-import v1 from '../assets/boulevard-atmospher (1).mp4'
-import v2 from '../assets/boulevard-atmospher (2).mp4'
-import v3 from '../assets/boulevard-atmospher (3).mp4'
+import v1 from '../assets/boulevard-atmospher (4).mp4'
+import v2 from '../assets/boulevard-atmospher (3).mp4'
+import v3 from '../assets/boulevard-atmospher (2).mp4'
 import { useI18n } from '../i18n/i18n'
 
 const HomeAtmosphere = () => {

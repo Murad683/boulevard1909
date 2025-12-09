@@ -54,9 +54,10 @@ const Contact = () => {
         <div className="card-soft overflow-hidden">
           <iframe
             title="Boulevard 1909 location"
-            src="https://www.google.com/maps?q=Boulevard%201909%20Baku&output=embed"
-            className="h-full min-h-[260px] w-full border-0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2752.1546300447403!2d49.8332816754788!3d40.33724656047392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307f00779bad09%3A0x8c410e1ffe7372fd!2sRestaurant%20Boulevard!5e1!3m2!1saz!2saz!4v1765275907358!5m2!1saz!2saz"
+            className="h-full min-h-[320px] w-full border-0"
             loading="lazy"
+            allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
